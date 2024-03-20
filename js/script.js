@@ -52,9 +52,27 @@ const members = [
     }
 ];
 
-
-
 // Stampare su console, per ogni membro del team, le informazioni di nome, ruolo e la stringa della foto 
 for (let key in members){
     console.log(key + ': ' + members[key].firstName + ' ' + members[key].lastName + ' ' + members[key].role + ' ' + members[key].image) ;
 }
+
+// Stampare le stesse informazioni su DOM sottoforma di stringhe
+const memberShow = document.querySelector('#show');
+let list = '';
+for (let key in members) {
+    const member = members[key];
+    list += `<div>
+                <h3>${member.image}<h3>
+                <h3>${member.firstName} ${member.lastName}</h3>
+                <p>${member.role}</p>
+            </div>`;
+
+            memberShow.innerHTML = list;
+}
+
+// const memberShow = document.querySelector('#show')
+// for (let i = 0; i < members.length; i++){
+//     const thisMember = members[i];
+//         memberShow.innerHTML = i + ': ' + thisMember.firstName + ' ' + thisMember.lastName + ' ' + thisMember.role + ' ' + thisMember.image ;
+// }
