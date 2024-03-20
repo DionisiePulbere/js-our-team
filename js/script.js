@@ -62,17 +62,15 @@ const memberShow = document.querySelector('#show');
 let list = '';
 for (let key in members) {
     const member = members[key];
-    list += `<div class="mx-3">
-                <img class="img-fluid" src="img/${member.image}">
-                <h3 class="text-center">${member.firstName} ${member.lastName}</h3>
-                <p class="text-center">${member.role}</p>
+    // Trasformare la stringa foto in una immagine effettiva
+    // Organizzare i singoli membri in card/schede
+    list += `<div class="card m-3" style="width: 18rem;">
+                <img src="img/${member.image}" class="card-img-top" alt="member">
+                <div class="card-body">
+                    <h5 class="card-title text-center">${member.firstName}${member.lastName}</h5>
+                    <p class="card-text text-center">${member.role}</p>
+                </div>
             </div>`;
 
             memberShow.innerHTML = list;
 }
-
-// const memberShow = document.querySelector('#show')
-// for (let i = 0; i < members.length; i++){
-//     const thisMember = members[i];
-//         memberShow.innerHTML = i + ': ' + thisMember.firstName + ' ' + thisMember.lastName + ' ' + thisMember.role + ' ' + thisMember.image ;
-// }
