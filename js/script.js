@@ -11,7 +11,45 @@
 // Trasformare la stringa foto in una immagine effettiva
 // BONUS 2:
 // Organizzare i singoli membri in card/schede
-// Consigli del giorno:
-// Ragioniamo come sempre a step.
-// Prima la logica in italiano e poi traduciamo in codice.
-// E ricordiamoci che console.log() è nostro amico!
+
+
+// creo un array di oggetti con i dati forniti 
+const members = [
+    {
+        firstName: 'Wayne',
+        lastName: 'Barnett',
+        role: 'Founder & CEO',
+        image: 'wayne-barnett-founder-ceo.jpg' 
+    },
+    {
+        firstName: 'Angela',
+        lastName: 'Caroll',
+        role: 'Chief Editor',
+        image: 'angela-caroll-chief-editor.jpg' 
+    },
+    {
+        firstName: 'Walter',
+        lastName: 'Gordon',
+        role: 'Office Manager',
+        image: 'walter-gordon-office-manager.jpg' 
+    },
+    {
+        firstName: 'Angela',
+        lastName: 'Lopez',
+        role: 'Social Media Manager',
+        image: 'angela-lopez-social-media-manager.jpg' 
+    },
+    {
+        firstName: 'Scott',
+        lastName: 'Estrada',
+        role: 'Developer',
+        image: 'scott-estrada-developer.jpg' 
+    },
+    {
+        firstName: 'Barbara',
+        lastName: 'Ramos',
+        role: 'Graphic Designer',
+        image: 'barbara-ramos-graphic-designer.jpg' 
+    }
+];
+
