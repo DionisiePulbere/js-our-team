@@ -62,10 +62,10 @@ const memberShow = document.querySelector('#show');
 let list = '';
 for (let key in members) {
     const member = members[key];
-    list += `<div>
-                <h3>${member.image}<h3>
-                <h3>${member.firstName} ${member.lastName}</h3>
-                <p>${member.role}</p>
+    list += `<div class="mx-3">
+                <img class="img-fluid" src="img/${member.image}">
+                <h3 class="text-center">${member.firstName} ${member.lastName}</h3>
+                <p class="text-center">${member.role}</p>
             </div>`;
 
             memberShow.innerHTML = list;
